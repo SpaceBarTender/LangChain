@@ -1,0 +1,20 @@
+#
+# Author: Lasse Collin
+#
+# This file has been put into the public domain.
+# You can do whatever you want with this file.
+#
+
+prefix=/home/spacebartender/dev-env/repos/LangChain/venv
+exec_prefix=/home/spacebartender/dev-env/repos/LangChain/venv
+libdir=/home/spacebartender/dev-env/repos/LangChain/venv/lib
+includedir=/home/spacebartender/dev-env/repos/LangChain/venv/include
+
+Name: liblzma
+Description: General purpose data compression library
+URL: https://xz.tukaani.org/xz-utils/
+Version: 5.4.6
+Cflags: -I${includedir}
+Cflags.private: -DLZMA_API_STATIC
+Libs: -L${libdir} -llzma
+Libs.private: -pthread -lpthread

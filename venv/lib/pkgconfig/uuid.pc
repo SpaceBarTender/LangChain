@@ -1,0 +1,11 @@
+prefix=/home/spacebartender/dev-env/repos/LangChain/venv
+exec_prefix=/home/spacebartender/dev-env/repos/LangChain/venv
+libdir=/home/spacebartender/dev-env/repos/LangChain/venv/lib
+includedir=/home/spacebartender/dev-env/repos/LangChain/venv/include
+
+Name: uuid
+Description: Universally unique id library
+Version: 2.32.1
+Requires:
+Cflags: -I${includedir}/uuid
+Libs: -L${libdir} -luuid
